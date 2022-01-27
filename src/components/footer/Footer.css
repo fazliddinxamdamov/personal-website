@@ -1,0 +1,18 @@
+.footer-container{
+    /*border: 1px solid red;*/
+    /*height: 20px;*/
+    display: flex;
+    justify-content: center;
+}
+.footer-container p{
+    align-items: center;
+    display: flex;
+    justify-conent: center;
+    margin-bottom: 0;
+    /*flex-wrap: nowrap;*/
+}
+.footer-logo{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+}

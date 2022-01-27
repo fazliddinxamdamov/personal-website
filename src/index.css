@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "InconsolataMedium";
+    src: local("InconsolataMedium") ,
+     url("./fonts/Inconsolata/Inconsolata-Medium.ttf") format("truetype");
+    /*font-weight: bold;*/
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff !important;
+    box-sizing: border-box;
+    font-family: "InconsolataMedium";
+}
