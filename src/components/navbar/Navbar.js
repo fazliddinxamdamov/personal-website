@@ -18,8 +18,6 @@ function Navbar(){
                     <li className={"nav-item my-nav-item"}> <NavLink to='/' >Home</NavLink>  </li>
                     <li className={"nav-item my-nav-item"}> <NavLink to='/portfolio'>Portfolio</NavLink>  </li>
                     <li className={"nav-item my-nav-item"}> <NavLink to='/about' >About</NavLink>  </li>
-
-
                 </ul>
             </div>
 
