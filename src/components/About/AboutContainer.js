@@ -17,9 +17,9 @@ function AboutContainer() {
                 </div>
 
                 <div className={"description"}>
-                    <p>Mening to'liq ismim Xamdamov Fazliddin Faroxiddin o'g'li.</p>
+                    <p>Mening ismim Fazliddin Xamdamov.</p>
 
-                    <p>2002-yil 6-sentabrda Andijonning Dalvarzin mahallasida tug'ilganman.</p>
+                    <p>2002-yilda Andijoda tug'ilganman. Hozirda Toshkentda Java Backend yo'nalishida o'z tajribamni oshirib kelmoqdaman.</p>
                 </div>
             </div>
 

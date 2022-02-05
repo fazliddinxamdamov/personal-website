@@ -2,7 +2,7 @@
     min-width: 100vmin;
     height: 10vh;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 45px 0 40px;
     position: relative;
     display: flex;
     align-items: center;
@@ -12,13 +12,13 @@
 }
 
 .navbar-brand{
-    font-size: 32px;
+    font-size: 30px;
     color: #c0bebe;
     text-decoration: none;
     display: flex;
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
-    margin-right: 1rem;
+    /*margin-right: 1rem;*/
     white-space: nowrap;
 }
 
@@ -38,18 +38,18 @@
 
 }
 .my-nav-item{
-    margin-left: 3.4rem;
+    margin-left: 2.5rem;
 }
 .my-nav-item a{
     text-decoration: none;
     color: #c0bebe;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .navbar-logo{
-    width: 45px;
-    height: 45px;
-    margin-top: 27px;
+    width: 40px;
+    height: 40px;
+    margin-top: 26px;
 }
 
 .github-icon{
