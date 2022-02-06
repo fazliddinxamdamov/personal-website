@@ -16,7 +16,7 @@ body{
 .home-about-description{
     width: 50%;
     height: 290px;
-    padding: 2rem 0 0 2rem;
+    padding: 0 0 0 2rem;
     margin-left: 3rem;
     /*border: 1px solid red;*/
     display: flex;
@@ -78,11 +78,11 @@ body{
 }
 
 .home-button-item1:hover{
-    /*width: 120px;*/
-    /*height: 50%;*/
-    /*background-color:#6E6F71;*/
-    /*border-radius: 7px;*/
-    /*box-shadow: 0 1px 10px #6E6F71;*/
+    width: 120px;
+    height: 30px;
+    background-color:#3C9BDF;
+    box-shadow: 0 0.5px 3px #a2cdec;
+    opacity: 0.9;
 }
 
 .home-button-item2{
@@ -97,11 +97,10 @@ body{
 }
 
 .home-button-item2:hover{
-    /*width: 120px;*/
-    /*height: 50%;*/
-    /*background-color: #F8AB8B;*/
-    /*border-radius: 7px;*/
-    /*box-shadow: 0 1px 10px #F8AB8B;*/
+    width: 120px;
+    height: 30px;
+    box-shadow: 0 0.5px 3px #a2cdec;
+    opacity: 0.9;
 }
 
 .about-me-button1{
@@ -125,7 +124,6 @@ body{
     font-size: 18px;
     font-family: InconsolataMedium;
 }
-
 
 .about-img{
     /*border: 1px solid red;*/
@@ -151,9 +149,17 @@ body{
     width: 50px;
     height: 50px;
 }
+.github-icon:hover{
+    opacity: 0.85;
+}
 .github-icon img{
     width: 100%;
 }
+
+/*Responsive pages*/
+/*@media screen and (min-width: ){*/
+
+/*}*/
 
 
 

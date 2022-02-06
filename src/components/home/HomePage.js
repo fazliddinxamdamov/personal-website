@@ -1,7 +1,6 @@
 import React from "react";
 import './HomePage.css'
 import img from './abstract.png'
-// import img from './coding-freak.gif'
 import '../../fonts/Inconsolata/Inconsolata-Medium.ttf'
 import github from './github2.png'
 import linkedIn from './4747495_linked in_social media_networking_icon.png'
@@ -9,7 +8,6 @@ import medium from './7088990_medium_medium logo_icon.png'
 import facebook from './facebook.png'
 import mail from './mail4.png'
 import {Link} from "react-router-dom";
-
 
 function HomePage() {
     return (

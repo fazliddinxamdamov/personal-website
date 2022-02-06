@@ -1,9 +1,15 @@
 import React from "react";
+import Navbar from "../navbar/Navbar";
+import Footer from "../footer/Footer";
 
 function Portfolio() {
-    return(
+    return (
         <div>
+            <Navbar/>
+
             This is the portFolio page
+
+            <Footer/>
         </div>
     )
 }

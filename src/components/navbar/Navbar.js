@@ -1,10 +1,10 @@
 import React from "react";
 import './Navbar.css'
-import navbarLogo from './navbar-logo.jpg'
+import navbarLogo from '../footer/footer-logo.jpg'
 import {Link, NavLink} from "react-router-dom";
 
-function Navbar(){
-    return(
+function Navbar() {
+    return (
         <div className={"container"}>
             <div className={"productName"}>
                 <a href={"/"} className={"navbar-brand"}>
@@ -15,12 +15,21 @@ function Navbar(){
 
             <div className={"collapse navbar-collapse my-links"}>
                 <ul className={"navbar-nav my-navbar-nav"}>
-                    <li className={"nav-item my-nav-item"}> <NavLink to='/' >Home</NavLink></li>
-                    <li className={"nav-item my-nav-item"}> <NavLink to='/portfolio'>Portfolio</NavLink></li>
-                    <li className={"nav-item my-nav-item"}> <NavLink to='/about' >About</NavLink></li>
-                    <li className={"nav-item my-nav-item"}> <NavLink to={{pathname:"//t.me/s/faz1iddinBLog"}} target="_blank">Channel</NavLink></li>
+                    <li className={"nav-item my-nav-item"}><NavLink to='/'>Home</NavLink></li>
+                    <li className={"nav-item my-nav-item"}><NavLink to='/portfolio'>Portfolio</NavLink></li>
+                    <li className={"nav-item my-nav-item"}><NavLink to='/about'>About</NavLink></li>
+                    <li className={"nav-item my-nav-item"}><NavLink to={{pathname: "//t.me/s/faz1iddinBLog"}}
+                                                                    target="_blank">Channel</NavLink></li>
                 </ul>
             </div>
+
+
+            <div className={"burger"}>
+                <div className={"b-child1"}></div>
+                <div className={"b-child2"}></div>
+                <div className={"b-child3"}></div>
+            </div>
+
 
         </div>
     )
