@@ -144,6 +144,7 @@ body{
 
     .home-my-img-div{
         display: inline-block;
+        margin-top: 2rem;
     }
     .home-about-description{
         width: 100%;
@@ -152,7 +153,6 @@ body{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        grid-auto-rows: revert;
     }
 
     .home-p1{
@@ -175,7 +175,7 @@ body{
     }
     .home-p1 :nth-child(3){
         line-height: 18px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .home-about-buttons{
@@ -189,6 +189,29 @@ body{
         column-gap: 20px;
         /*color: white;*/
     }
+
+    .home-button-item1{
+        width: 140px;
+        height: 35px;
+        background-color: #3C9BDF;
+        border-radius: 4px;
+        color: white;
+        margin-right: 5px;
+    }
+
+    .home-button-item2{
+        width: 140px;
+        height: 35px;
+        background-color: #fff;
+        border: 2px solid #3C9BDF;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #3C9BDF;
+        margin-right: 5px;
+    }
+
+
+
 
     .about-img{
         display: none;

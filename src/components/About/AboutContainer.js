@@ -4,7 +4,7 @@ import img from '../home/java.jpg'
 
 function AboutContainer() {
     return (
-        <div className={"containerAbout"}>
+        <div className={"containerAbout container-md"}>
             <div className={"title"}>
                 <h1>Assalomu alaykum🖐️</h1>
                 <p>O'zim haqimda qisqacha ...</p>
