@@ -104,6 +104,7 @@
 
     .links a{
         font-size: 20px;
+        row-gap: 15px;
     }
 
     .links a.active{
@@ -112,7 +113,7 @@
         font-size: 25px;
         letter-spacing: 1px;
         position: relative;
-        row-gap: 1rem;
+        row-gap: 15px;
     }
 
     .navbar-logo{
@@ -128,7 +129,7 @@
         width: 20px;
         height: 15px;
         position: relative;
-        z-index: 5;
+        z-index: 10;
     }
 
     .bars-button span{
