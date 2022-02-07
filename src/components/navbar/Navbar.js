@@ -5,7 +5,7 @@ import {Link, NavLink} from "react-router-dom";
 
 function Navbar() {
 
-    const [show, setShow] = useState(true);
+    const [show, setShow] = useState(false);
 
     function showSwitch() {
         return setShow(!show)
