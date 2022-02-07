@@ -1,11 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import './Navbar.css'
 import navbarLogo from '../footer/footer-logo.jpg'
 import {Link, NavLink} from "react-router-dom";
 
 function Navbar() {
+
+    const [show, setShow] = useState(true);
+
+    function showSwitch() {
+        return setShow(!show)
+    }
+
     return (
         <div className={"container"}>
+
+            <div onClick={() => showSwitch()} className={show ? "bars-button active" : "bars-button"}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <div className={"productName"}>
                 <a href={"/"} className={"navbar-brand"}>
                     <img src={navbarLogo} className={"navbar-logo"} alt="Navbar Logo not Found :("/>
@@ -13,20 +27,11 @@ function Navbar() {
                 </a>
             </div>
 
-            <div className={"collapse navbar-collapse my-links"}>
-                <ul className={"navbar-nav my-navbar-nav"}>
-                    <li className={"nav-item my-nav-item"}><NavLink to='/'>Home</NavLink></li>
-                    <li className={"nav-item my-nav-item"}><NavLink to='/portfolio'>Services</NavLink></li>
-                    <li className={"nav-item my-nav-item"}><NavLink to={{pathname: "//t.me/s/faz1iddinBLog"}} target="_blank">Channel</NavLink></li>
-                    <li className={"nav-item my-nav-item"}><NavLink to='/about'>About</NavLink></li>
-                </ul>
-            </div>
-
-
-            <div className={"burger"}>
-                <div className={"b-child1"}></div>
-                <div className={"b-child2"}></div>
-                <div className={"b-child3"}></div>
+            <div className={show ? "links active" : "links"}>
+                <NavLink onClick={() => showSwitch()} to='/'>Home</NavLink>
+                <NavLink onClick={() => showSwitch()} to='/portfolio'>Services</NavLink>
+                <NavLink onClick={() => showSwitch()} to={{pathname: "//t.me/s/faz1iddinBLog"}} target="_blank">Channel</NavLink>
+                <NavLink onClick={() => showSwitch()} to='/about'>About</NavLink>
             </div>
 
 
