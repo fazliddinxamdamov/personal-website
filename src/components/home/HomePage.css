@@ -145,6 +145,7 @@ body{
     .home-my-img-div{
         display: inline-block;
         margin-top: 2rem;
+        margin-bottom: -1rem;
     }
     .home-about-description{
         width: 100%;
@@ -235,12 +236,6 @@ body{
         width: 100%;
     }
 }
-
-/*Responsive pages*/
-/*@media screen and (min-width: ){*/
-
-/*}*/
-
 
 
 
