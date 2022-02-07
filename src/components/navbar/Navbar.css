@@ -102,6 +102,19 @@
         justify-content: center;
     }
 
+    .links a{
+        font-size: 20px;
+    }
+
+    .links a.active{
+        text-decoration: none;
+        color: #000000;
+        font-size: 25px;
+        letter-spacing: 1px;
+        position: relative;
+        row-gap: 1rem;
+    }
+
     .navbar-logo{
         width: 30px;
         height: 30px;
@@ -115,7 +128,7 @@
         width: 20px;
         height: 15px;
         position: relative;
-        z-index: 4;
+        z-index: 5;
     }
 
     .bars-button span{
