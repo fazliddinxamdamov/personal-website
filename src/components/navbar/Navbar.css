@@ -96,15 +96,16 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
-        background-color: #a2cdec;
+        height: calc(100vh - 100px);
+        background-color: #fff;
         align-items: center;
         justify-content: center;
+        box-sizing: border-box;
     }
 
     .links a{
         font-size: 20px;
-        row-gap: 15px;
+        margin-bottom: 10px;
     }
 
     .links a.active{
