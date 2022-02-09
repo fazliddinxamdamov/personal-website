@@ -32,8 +32,6 @@ function AboutContainer() {
                     <p>2002-yilda Andijonda tug'ilganman. Hozirda Toshkentda Java Backend yo'nalishi bo'yicha o'z tajribamni oshirib bormoqdaman.</p>
                 </div>
             </div>
-
-
         </div>
     )
 }
