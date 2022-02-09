@@ -17,7 +17,7 @@ function AboutContainer() {
                 </div>
                 <div className={"description"}>
                     <p>Mening ismim Fazliddin Xamdamov.</p>
-                    <p>2002-yilda Andijoda tug'ilganman. Hozirda Toshkentda Java Backend yo'nalishi bo'yicha o'z tajribamni oshirib bormoqdaman.</p>
+                    <p>2002-yilda Andijonda tug'ilganman. Hozirda Toshkentda Java Backend yo'nalishi bo'yicha o'z tajribamni oshirib bormoqdaman.</p>
                 </div>
             </div>
         </div>
