@@ -96,15 +96,17 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: calc(100vh - 50px);
+        height: 100%;
         background-color: #fff;
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
+        z-index: 10;
+        transition: all .2s ease;
     }
 
     .links a{
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 10px;
     }
 
@@ -130,14 +132,21 @@
         width: 20px;
         height: 15px;
         position: relative;
-        z-index: 10;
+        z-index: 11;
+    }
+
+    .bars-button.active{
+        position: fixed;
+        top: 20px;
+        left: 16px;
     }
 
     .bars-button span{
         background-color: black;
         width: 100%;
         height: 2px;
-        transition: all .3s ease;
+        transition: all .2s ease;
+        z-index: 10;
     }
 
     .bars-button.active span:nth-child(2){
@@ -146,11 +155,13 @@
 
     .bars-button.active span:nth-child(1){
         position: absolute;
+        margin-top: 5px;
         transform: rotate(-45deg);
     }
 
     .bars-button.active span:nth-child(3){
         position: absolute;
+        margin-top: 5px;
         transform: rotate(45deg);
     }
 }
