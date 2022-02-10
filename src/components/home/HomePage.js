@@ -9,61 +9,70 @@ import medium from './7088990_medium_medium logo_icon.png'
 import facebook from './facebook.png'
 import mail from './mail4.png'
 import {Link} from "react-router-dom";
+import Slide from 'react-reveal/Slide';
 
 function HomePage() {
     return (
         <div className={"home-about-info"}>
-            <div className={"home-about-description"}>
-                <div className={"home-my-img-div"}>
-                    <img src={myImage} className={"home-my-img"} alt={"not found"}/>
-                </div>
+            <Slide left>
+                    <div className={"home-about-description"}>
+                        <div className={"home-my-img-div"}>
 
-                <div className={"home-p1"}>
-                    <p>Hi, I'm Fazliddin</p>
-                    <br/>
-                    <p>Back-End Developer from Andijan, Uzbekistan</p>
-                </div>
-                <div className={"home-about-buttons"}>
-                    <div className={"home-button-item1"}>
-                        <Link to='/about' style={{color: 'inherit', textDecoration: 'none'}}>
-                            <button type={"button"} className={"about-me-button1"}>About me</button>
-                        </Link>
-                    </div>
-                    <div className={"home-button-item2"}>
-                        <Link to='/portfolio' style={{color: 'inherit', textDecoration: 'none'}}>
-                            <button type={"button"} className={"about-me-button2"}>Services</button>
-                        </Link>
-                    </div>
-                </div>
-
-                <div className={"home-social-icon-div"}>
-                    <div className={"github-icon"}>
-                        <a href={"https://github.com/fazliddinxamdamov"}> <img src={github} alt="."/> </a>
-                    </div>
-
-                    <div className={"github-icon"}>
-                        <a href={"https://www.facebook.com/fazliddin.xamdamov.96"}> <img src={facebook} alt="."/> </a>
-                    </div>
-
-                    <div className={"github-icon"}>
-                        <a href={"https://fazliddinxamdamov102@gmail.com"} target={"_blank"}> <img src={mail} alt="."/>
-                        </a>
-                    </div>
-
-                    <div className={"github-icon"}>
-                        <a href={"https://fazliddinxamdamov.medium.com"}> <img src={medium} alt="."/> </a>
-                    </div>
-                    <div className={"github-icon"}>
-                        <a href={"https://www.linkedin.com/in/fazliddin-xamdamov"}> <img src={linkedIn} alt="."/> </a>
-                    </div>
+                            <img src={myImage} className={"home-my-img"} alt={"not found"}/>
 
 
-                </div>
-            </div>
+                        </div>
+
+                        <div className={"home-p1"}>
+                            <p>Hi, I'm Fazliddin</p>
+                            <br/>
+                            <p>Back-End Developer from Andijan, Uzbekistan</p>
+                        </div>
+                        <div className={"home-about-buttons"}>
+                            <div className={"home-button-item1"}>
+                                <Link to='/about' style={{color: 'inherit', textDecoration: 'none'}}>
+                                    <button type={"button"} className={"about-me-button1"}>About me</button>
+                                </Link>
+                            </div>
+                            <div className={"home-button-item2"}>
+                                <Link to='/portfolio' style={{color: 'inherit', textDecoration: 'none'}}>
+                                    <button type={"button"} className={"about-me-button2"}>Services</button>
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className={"home-social-icon-div"}>
+                            <div className={"github-icon"}>
+                                <a href={"https://github.com/fazliddinxamdamov"}> <img src={github} alt="."/> </a>
+                            </div>
+
+                            <div className={"github-icon"}>
+                                <a href={"https://www.facebook.com/fazliddin.xamdamov.96"}> <img src={facebook} alt="."/>
+                                </a>
+                            </div>
+
+                            <div className={"github-icon"}>
+                                <a href={"https://fazliddinxamdamov102@gmail.com"} target={"_blank"}> <img src={mail}
+                                                                                                           alt="."/>
+                                </a>
+                            </div>
+
+                            <div className={"github-icon"}>
+                                <a href={"https://fazliddinxamdamov.medium.com"}> <img src={medium} alt="."/> </a>
+                            </div>
+                            <div className={"github-icon"}>
+                                <a href={"https://www.linkedin.com/in/fazliddin-xamdamov"}> <img src={linkedIn} alt="."/>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+            </Slide>
 
             <div className={"about-img"}>
-                <img src={img} className={"img"} alt={"not found"}/>
-            </div>
+            <img src={img} className={"img"} alt={"not found"}/>
+        </div>
         </div>
     )
 }
