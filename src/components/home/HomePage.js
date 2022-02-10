@@ -22,7 +22,6 @@ function HomePage() {
                     <p>Hi, I'm Fazliddin</p>
                     <br/>
                     <p>Back-End Developer from Andijan, Uzbekistan</p>
-
                 </div>
                 <div className={"home-about-buttons"}>
                     <div className={"home-button-item1"}>

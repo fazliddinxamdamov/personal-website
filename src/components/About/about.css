@@ -41,7 +41,15 @@ body{
 }
 
 .div-img{
-    width: 350px;
+    width: 550px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 auto;
+    /*margin-bottom: 30px;*/
+}
+
+.div-img2{
+    width: 300px;
     overflow: hidden;
     border-radius: 20px;
     margin: 0 auto;
@@ -102,6 +110,13 @@ body{
 
     .div-img{
         width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .div-img2{
+        width: 60%;
         overflow: hidden;
         margin: 0 auto;
         border-radius: 10px;
