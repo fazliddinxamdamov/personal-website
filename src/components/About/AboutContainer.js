@@ -48,8 +48,7 @@ function AboutContainer() {
                 </div>
                 <div className={"description"}>
                     <p>Andijon(Anjan).</p>
-                    <p>2002-yilda Andijonda tug'ilganman. Hozirda Toshkentda Java Backend yo'nalishi bo'yicha o'z
-                        tajribamni oshirib bormoqdaman.</p>
+                    <p>Bu Andijon men tug'ilib o'skan shahar. </p>
                 </div>
             </div>
 
