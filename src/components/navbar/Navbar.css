@@ -1,47 +1,48 @@
-.container{
+.container {
     min-width: 100vmin;
-    height: 10vh;
+    height: 60px;
     margin: 0 auto;
     padding: 0 45px 0 40px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff  ;
+    background-color: #fff;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 30px;
     color: #000;
     text-decoration: none;
     display: flex;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    /*margin-right: 1rem;*/
     white-space: nowrap;
 }
 
-.bars-button{
+.navbar-brand p {
+    margin-top: 4px;
+}
+
+.bars-button {
     display: none;
 }
 
-.navbar-logo{
+.navbar-logo {
     width: 40px;
     height: 40px;
-    margin-top: 26px;
 }
 
-.github-icon{
+.github-icon {
     width: 30px;
     height: 30px;
 }
 
-.links{
+.links {
     display: flex;
     align-items: center;
     gap: 25px;
 }
-.links a{
+
+.links a {
     text-decoration: none;
     color: #000000;
     font-size: 18px;
@@ -49,47 +50,45 @@
     position: relative;
 }
 
-.links a:hover{
+.links a:hover {
     opacity: 0.7;
 }
 
-@media screen and (min-width: 0) and (max-width: 768px){
-
-    .navbar-brand{
-        font-size: 20px;
-        color: #000;
-        text-decoration: none;
-        display: flex;
-        justify-content: flex-start;
-        padding-top: 0.3125rem;
-        padding-bottom: 0.3125rem;
-        white-space: nowrap;
-        margin-left: 10px;
-    }
-    .product-name{
-        display: flex;
-        justify-content: flex-start;
-    }
-
+@media screen and (min-width: 0) and (max-width: 768px) {
     .container {
         min-width: 100vmin;
         height: 50px;
         margin: 0 auto;
         padding: 0 20px 0 15px;
-        /*position: relative;*/
         display: flex;
         /*border: 1px solid red;*/
         align-items: center;
-        justify-content:left;
+        justify-content: left;
         background-color: #fff;
         box-sizing: border-box;
     }
+    .navbar-brand {
+        font-size: 20px;
+        color: #000;
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-start;
+        white-space: nowrap;
+        margin-left: 10px;
+    }
 
-    .links{
+    .navbar-brand p {
+        margin-top: 19px;
+        margin-bottom: 0;
+    }
+    .navbar-logo{
+        margin-bottom: 15px;
+    }
+    .links {
         display: none;
     }
 
-    .links.active{
+    .links.active {
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -105,12 +104,12 @@
         transition: all .2s ease;
     }
 
-    .links a{
+    .links a {
         font-size: 25px;
         margin-bottom: 10px;
     }
 
-    .links a.active{
+    .links a.active {
         text-decoration: none;
         color: #000000;
         font-size: 25px;
@@ -119,13 +118,13 @@
         row-gap: 15px;
     }
 
-    .navbar-logo{
+    .navbar-logo {
         width: 30px;
         height: 30px;
         margin-top: 15px;
     }
 
-    .bars-button{
+    .bars-button {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -135,13 +134,13 @@
         z-index: 11;
     }
 
-    .bars-button.active{
+    .bars-button.active {
         position: fixed;
         top: 20px;
         left: 16px;
     }
 
-    .bars-button span{
+    .bars-button span {
         background-color: black;
         width: 100%;
         height: 2px;
@@ -149,17 +148,17 @@
         z-index: 10;
     }
 
-    .bars-button.active span:nth-child(2){
+    .bars-button.active span:nth-child(2) {
         display: none;
     }
 
-    .bars-button.active span:nth-child(1){
+    .bars-button.active span:nth-child(1) {
         position: absolute;
         margin-top: 5px;
         transform: rotate(-45deg);
     }
 
-    .bars-button.active span:nth-child(3){
+    .bars-button.active span:nth-child(3) {
         position: absolute;
         margin-top: 5px;
         transform: rotate(45deg);
