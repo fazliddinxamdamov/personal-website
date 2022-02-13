@@ -21,7 +21,7 @@ function HomePage() {
                         </div>
 
                         <div className={"home-p1"}>
-                            <p>Hi, I'm Fazliddin</p>
+                            <p>I'm Fazliddin Xamdamov</p>
                             <br/>
                             <p>Back-End Developer from Andijan, Uzbekistan</p>
                         </div>
