@@ -17,10 +17,7 @@ function HomePage() {
             <Slide left>
                     <div className={"home-about-description"}>
                         <div className={"home-my-img-div"}>
-
                             <img src={myImage} className={"home-my-img"} alt={"not found"}/>
-
-
                         </div>
 
                         <div className={"home-p1"}>
@@ -43,11 +40,11 @@ function HomePage() {
 
                         <div className={"home-social-icon-div"}>
                             <div className={"github-icon"}>
-                                <a href={"https://github.com/fazliddinxamdamov"}> <img src={github} alt="."/> </a>
+                                <a target={"_blank"}  href={"https://github.com/fazliddinxamdamov"}> <img src={github} alt="."/> </a>
                             </div>
 
                             <div className={"github-icon"}>
-                                <a href={"https://www.facebook.com/fazliddin.xamdamov.96"}> <img src={facebook} alt="."/>
+                                <a target={"_blank"}  href={"https://www.facebook.com/fazliddin.xamdamov.96"}> <img src={facebook} alt="."/>
                                 </a>
                             </div>
 
@@ -58,10 +55,10 @@ function HomePage() {
                             </div>
 
                             <div className={"github-icon"}>
-                                <a href={"https://fazliddinxamdamov.medium.com"}> <img src={medium} alt="."/> </a>
+                                <a  target={"_blank"}  href={"https://fazliddinxamdamov.medium.com"}> <img src={medium} alt="."/> </a>
                             </div>
                             <div className={"github-icon"}>
-                                <a href={"https://www.linkedin.com/in/fazliddin-xamdamov"}> <img src={linkedIn} alt="."/>
+                                <a  target={"_blank"}  href={"https://www.linkedin.com/in/fazliddin-xamdamov"}> <img src={linkedIn} alt="."/>
                                 </a>
                             </div>
 

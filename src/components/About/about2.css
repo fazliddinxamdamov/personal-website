@@ -39,6 +39,14 @@ body{
     margin-top: 20px;
 }
 
+.pdp-link{
+    color: #3C9BDF;
+    text-decoration: underline;
+}
+.pdp-link:hover{
+    cursor: pointer;
+}
+
 .div-img{
     width: 550px;
     margin: 0 auto;

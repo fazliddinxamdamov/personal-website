@@ -1,14 +1,10 @@
 import React, {useEffect, useState} from "react";
-import './about.css'
+import './about2.css'
 import img from '../home/java.jpg'
 import me from './me.jpg'
 import pdp from './pdp.JPG'
 import andijon from './andijon.jpg'
-import Slide from 'react-reveal/Slide';
-import Shake from 'react-reveal/Shake';
-import Reveal from 'react-reveal/Reveal';
-
-
+import Slide from 'react-reveal/Slide'
 function AboutContainer() {
 
     const [post, setPost] = useState(null)
@@ -23,7 +19,7 @@ function AboutContainer() {
             <Slide left>
                 <div className={"title"}>
                     <h1>Assalomu alaykum🖐️</h1>
-                    <p>O'zim haqimda qisqacha...</p>
+                    <p>briefly about myself...</p>
                 </div>
             </Slide>
             <div className={"about-description"}>
@@ -34,9 +30,8 @@ function AboutContainer() {
                 </Slide>
 
                 <div className={"description"}>
-                    <p>Mening ismim Fazliddin Xamdamov.</p>
-                    <p>2002-yilda Andijonda tug'ilganman. Hozirda Toshkentda Java Backend yo'nalishi bo'yicha o'z
-                        tajribamni oshirib bormoqdaman.</p>
+                    <p>My fullname is Fazliddin Xamdamov</p>
+                    <p>I was born in 2002 in Andijan. I am currently improving my Java Backend experience in Tashkent and my goal is to become an experienced software engineer</p>
                 </div>
             </div>
 
@@ -47,8 +42,8 @@ function AboutContainer() {
                     <img src={andijon} className={"img"} alt={"not found"}/>
                 </div>
                 <div className={"description"}>
-                    <p>Andijon(Anjan).</p>
-                    <p>Bu Andijon men tug'ilib o'skan shahar. </p>
+                    <p>Andijon(Anjan)</p>
+                    <p>I was born and raised in the city you see in this picture. I am very proud of this and I can say that even though I have been a guest so far, I bring a lot of strength to my family and the people who live in this place. Hopefully this will continue</p>
                 </div>
             </div>
 
@@ -59,9 +54,8 @@ function AboutContainer() {
                     <img src={pdp} className={"img"} alt={"not found"}/>
                 </div>
                 <div className={"description"}>
-                    <p>PDP IT Academy.</p>
-                    <p>2002-yilda Andijonda tug'ilganman. Hozirda Toshkentda Java Backend yo'nalishi bo'yicha o'z
-                        tajribamni oshirib bormoqdaman.</p>
+                    <p>at <a target={"_blank"} href="https://pdp.uz/"><span className={"pdp-link"}>PDP IT Academy</span></a></p>
+                    <p>.</p>
                 </div>
             </div>
 
