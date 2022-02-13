@@ -40,35 +40,33 @@ function HomePage() {
 
                         <div className={"home-social-icon-div"}>
                             <div className={"github-icon"}>
-                                <a target={"_blank"}  href={"https://github.com/fazliddinxamdamov"}> <img src={github} alt="."/> </a>
+                                <a target={"_blank"}  href={"https://github.com/fazliddinxamdamov"} rel="noreferrer"> <img src={github} alt="."/> </a>
                             </div>
 
                             <div className={"github-icon"}>
-                                <a target={"_blank"}  href={"https://www.facebook.com/fazliddin.xamdamov.96"}> <img src={facebook} alt="."/>
+                                <a target={"_blank"}  href={"https://www.facebook.com/fazliddin.xamdamov.96"} rel="noreferrer"> <img src={facebook} alt="."/>
                                 </a>
                             </div>
 
                             <div className={"github-icon"}>
-                                <a href={"https://fazliddinxamdamov102@gmail.com"} target={"_blank"}> <img src={mail}
+                                <a href={"https://fazliddinxamdamov102@gmail.com"} target={"_blank"} rel="noreferrer"> <img src={mail}
                                                                                                            alt="."/>
                                 </a>
                             </div>
 
                             <div className={"github-icon"}>
-                                <a  target={"_blank"}  href={"https://fazliddinxamdamov.medium.com"}> <img src={medium} alt="."/> </a>
+                                <a  target={"_blank"}  href={"https://fazliddinxamdamov.medium.com"} rel="noreferrer"> <img src={medium} alt="."/> </a>
                             </div>
                             <div className={"github-icon"}>
-                                <a  target={"_blank"}  href={"https://www.linkedin.com/in/fazliddin-xamdamov"}> <img src={linkedIn} alt="."/>
+                                <a  target={"_blank"}  href={"https://www.linkedin.com/in/fazliddin-xamdamov"} rel="noreferrer"> <img src={linkedIn} alt="."/>
                                 </a>
                             </div>
-
-
                         </div>
                     </div>
             </Slide>
 
             <div className={"about-img"}>
-            <img src={img} className={"img"} alt={"not found"}/>
+            <img src={img} className={"home-abstract-img"} alt={"not found"}/>
         </div>
         </div>
     )
