@@ -55,7 +55,7 @@ function AboutContainer() {
                 </div>
                 <div className={"description"}>
                     <p>at <a target={"_blank"} href="https://pdp.uz/"><span className={"pdp-link"}>PDP IT Academy</span></a></p>
-                    <p>.</p>
+                    <p>In this picture, I am doing my work at the PDP IT Academy in Tashkent. It was at this time that I was preparing my website, if I am not mistaken. And I also want to mention that I’ve learned what I’ve read here, and I haven’t stopped learning yet. I express my gratitude to the PDP.</p>
                 </div>
             </div>
 
