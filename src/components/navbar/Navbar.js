@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import './Navbar.css'
-import navbarLogo from '../footer/footer-logo.jpg'
+import navbarLogo from './logo_size.jpg'
 import {Link, NavLink} from "react-router-dom";
 
 function Navbar() {

@@ -27,8 +27,10 @@
 }
 
 .navbar-logo {
-    width: 40px;
-    height: 40px;
+    margin-top: 4px;
+    width: 20px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .github-icon {
@@ -78,11 +80,8 @@
     }
 
     .navbar-brand p {
-        margin-top: 19px;
+        margin-top: 3px;
         margin-bottom: 0;
-    }
-    .navbar-logo{
-        margin-bottom: 15px;
     }
     .links {
         display: none;
@@ -119,9 +118,10 @@
     }
 
     .navbar-logo {
-        width: 30px;
-        height: 30px;
-        margin-top: 15px;
+        margin-top: 2px;
+        width: 15px;
+        height: 20px;
+        margin-right: 10px;
     }
 
     .bars-button {
