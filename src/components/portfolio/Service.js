@@ -23,27 +23,29 @@ function Service() {
             <div className={"services"}>
                 <div className={"box-1"}>
                     <img src={img_1} alt=""/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa est illo impedit itaque iure
-                        odio quae sapiente ullam vero? Dolor, soluta voluptatibus? Animi, delectus nam non odio quo
-                        sint.</p>
+                    <p>Develop and optimize a perfect product using new technologies without additional and unnecessary errors.</p>
                 </div>
                 <div className={"box-1"}>
                     <img src={img_2} alt=""/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa est illo impedit itaque iure
-                        odio quae sapiente ullam vero? Dolor, soluta voluptatibus? Animi, delectus nam non odio quo
-                        sint.</p>
+                    <p>When working with data, sort them and get them in a minimum amount of time.
+                        Write complex and easy-to-understand sql queries and link them firmly to the backend.</p>
                 </div>
                 <div className={"box-1"}>
                     <img src={img_3} alt=""/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa est illo impedit itaque iure
-                        odio quae sapiente ullam vero? Dolor, soluta voluptatibus? Animi, delectus nam non odio quo
-                        sint.</p>
+                    <p>Ability to collect and work with relevant data at the right time. Ability to adapt to the project and code review.</p>
                 </div>
 
             </div>
 
             <div className={"service-resume-div"}>
-                <a className={"service-resume"} href={resume} download><div><p>View my resume</p></div></a>
+                <div>
+                    <a className={"service-resume"} href={resume} download>
+                        <div>
+                            <p>View my resume</p>
+                        </div>
+                        
+                    </a>
+                </div>
             </div>
 
 
