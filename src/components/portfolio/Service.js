@@ -43,7 +43,6 @@ function Service() {
                         <div>
                             <p>View my resume</p>
                         </div>
-                        
                     </a>
                 </div>
             </div>
