@@ -4,7 +4,7 @@ import Slide from 'react-reveal/Slide';
 import img_1 from './programming-course.png'
 import img_2 from './database (3).png'
 import img_3 from './search-engine-optimization.png'
-import resume from './resume.pdf'
+import resume from './Xamdamov Fazliddin.pdf'
 
 function Service() {
     return (
