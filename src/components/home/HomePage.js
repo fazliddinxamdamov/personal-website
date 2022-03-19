@@ -5,6 +5,7 @@ import myImage from '../home/3-4-removebg-preview.jpg'
 import '../../fonts/Inconsolata/Inconsolata-Medium.ttf'
 import github from './github2.png'
 import linkedIn from './4747495_linked in_social media_networking_icon.png'
+import dev from './dev.png'
 import medium from './7088990_medium_medium logo_icon.png'
 import facebook from './facebook.png'
 import mail from './mail4.png'
@@ -49,17 +50,20 @@ function HomePage() {
                             </div>
 
                             <div className={"github-icon"}>
-                                <a href={"https://fazliddinxamdamov102@gmail.com"} target={"_blank"} rel="noreferrer"> <img src={mail}
-                                                                                                           alt="."/>
+                                <a href={"https://fazliddinxamdamov102@gmail.com"} target={"_blank"} rel="noreferrer"> <img src={mail} alt="."/>
                                 </a>
                             </div>
 
                             <div className={"github-icon"}>
-                                <a  target={"_blank"}  href={"https://fazliddinxamdamov.medium.com"} rel="noreferrer"> <img src={medium} alt="."/> </a>
+                                <a  target={"_blank"}  href={"https://medium.com/@fazliddinxamdamov"} rel="noreferrer"> <img src={medium} alt="."/> </a>
                             </div>
+
                             <div className={"github-icon"}>
-                                <a  target={"_blank"}  href={"https://www.linkedin.com/in/fazliddin-xamdamov"} rel="noreferrer"> <img src={linkedIn} alt="."/>
-                                </a>
+                                <a  target={"_blank"}  href={"https://dev.to/fazliddinxamdamov"} rel="noreferrer"> <img src={dev} alt="."/> </a>
+                            </div>
+
+                            <div className={"github-icon"}>
+                                <a  target={"_blank"}  href={"https://www.linkedin.com/in/fazliddin-xamdamov"} rel="noreferrer"> <img src={linkedIn} alt="."/></a>
                             </div>
                         </div>
                     </div>
