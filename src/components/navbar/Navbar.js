@@ -29,6 +29,7 @@ function Navbar() {
 
             <div className={show ? "links active" : "links"}>
                 <NavLink onClick={() => showSwitch()} to='/'>Home</NavLink>
+                <NavLink onClick={() => showSwitch()} to='blog'>Blog🎊</NavLink>
                 <NavLink onClick={() => showSwitch()} to='/portfolio'>Services</NavLink>
                 <NavLink onClick={() => showSwitch()} to={{pathname: "//t.me/s/faz1iddinBLog"}} target="_blank">Channel</NavLink>
                 <NavLink onClick={() => showSwitch()} to='/about'> About </NavLink>

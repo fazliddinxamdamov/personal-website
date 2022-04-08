@@ -1,0 +1,20 @@
+body {
+    box-sizing: border-box;
+    padding: 1rem;
+    position: relative;
+}
+
+.notFound {
+    width: 500px;
+    /*border: 1px solid red;*/
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 250px);
+}
+
+.p404{
+    font-size: 100px;
+    font-weight: lighter;
+}
+

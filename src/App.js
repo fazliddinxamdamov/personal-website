@@ -2,6 +2,7 @@ import './App.css';
 import Home from "./components/home/Home";
 import About from "./components/About/About";
 import Portfolio from "./components/portfolio/Portfolio";
+import Blog from "./components/blog/BLog";
 import NotFound from "./components/notFound/NotFound";
 import {BrowserRouter as Router, Routes, Route, Switch} from 'react-router-dom'
 
@@ -11,12 +12,12 @@ function App() {
             <Router>
                 <Routes>
                     <Route exact path='/' element={<Home/>}/>
+                    <Route exact path='/blog' element={<Blog/>}/>
                     <Route exact path='/portfolio' element={<Portfolio/>}/>
                     <Route exact path='/about' element={<About/>}/>
-                    <Route exact path='*' element={NotFound}/>
+                    <Route exact path='*' element={<NotFound/>}/>
                 </Routes>
             </Router>
-
         </div>
     );
 }

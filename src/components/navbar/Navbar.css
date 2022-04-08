@@ -7,7 +7,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: inherit;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
 }
 
 .navbar-brand {
