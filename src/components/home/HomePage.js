@@ -1,6 +1,6 @@
 import React from "react";
 import './HomePage.css'
-import img from './me.jpg'
+import img from './me2.jpg'
 import myImage from '../home/3-4-removebg-preview.jpg'
 import '../../fonts/Inconsolata/Inconsolata-Medium.ttf'
 import github from './github2.png'
@@ -23,7 +23,7 @@ function HomePage() {
             <Slide left>
                 <div className={"home-about-description"}>
                     <div className={"home-my-img-div"}>
-                        <img src={myImage} className={"home-my-img"} alt={"My image not found"}/>
+                        <img src={img} className={"home-my-img"} alt={"My image not found"}/>
                     </div>
 
                     <div className={"home-p1"}>

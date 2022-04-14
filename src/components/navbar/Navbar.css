@@ -68,7 +68,7 @@
         /*border: 1px solid red;*/
         align-items: center;
         justify-content: left;
-        background-color: #fff;
+        background-color: inherit;
         box-sizing: border-box;
     }
     .navbar-brand {

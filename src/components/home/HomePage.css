@@ -14,7 +14,7 @@ body{
     text-align: center;
     /*margin: 0px;*/
     /*overflow: hidden;*/
-    font-family: InconsolataMedium;
+    font-family: InconsolataMedium, serif;
 
 }
 .home-about-info{
@@ -28,17 +28,9 @@ body{
 
 .home-my-img-div{
     display: none;
-    width: 200px;
-    height: 200px;
-    margin-top: 3rem;
 }
 
-.home-my-img{
-    /*border: 1px solid red;*/
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
-}
+
 
 .home-about-description{
     width: 50%;
@@ -112,6 +104,7 @@ body{
     cursor:pointer;
     color: #fff;
     font-size: 18px;
+    font-family: InconsolataMedium, serif;
 }
 .about-me-button2{
     border: none;
@@ -122,21 +115,21 @@ body{
     cursor:pointer;
     color: #3C9BDF;
     font-size: 18px;
+    font-family: InconsolataMedium, serif;
 }
 .about-img{
-    /*width: 40%;*/
-    /*height: 100%;*/
-    /*margin-top: 0;*/
     margin-left: -150px;
-    /*border: 1px solid;*/
+    border: 5px solid #183c60;
+    box-shadow: 0 0 10px #183c60;
+    border-radius: 50%;
+    background-color: #183c60;
 }
 
 .home-abstract-img{
-    /*width: 100%;*/
-    /*height: 100%;*/
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    margin-top: 1px;
 }
 .home-social-icon-div{
     width: 100%;
@@ -157,6 +150,25 @@ body{
 }
 
 @media screen and (min-width: 0) and (max-width: 768px){
+
+    .home-my-img{
+        /*border: 1px solid red;*/
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .home-my-img-div{
+        /*display: none;*/
+        width: 210px;
+        height: 210px;
+        margin-top: 3rem;
+        border: 5px solid #183c60;
+        border-radius: 50%;
+        background-color: #183c60;
+        box-shadow: 0 0 10px #183c60;
+    }
+
     .home-about-info{
         width: 100%;
         height: calc(100vh - 100px);
@@ -234,9 +246,6 @@ body{
         color: #3C9BDF;
         margin-right: 5px;
     }
-
-
-
 
     .about-img{
         display: none;
