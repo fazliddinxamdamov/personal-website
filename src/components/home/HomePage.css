@@ -160,8 +160,8 @@ body{
 
     .home-my-img-div{
         /*display: none;*/
-        width: 210px;
-        height: 210px;
+        width: 180px;
+        height: 180px;
         margin-top: 3rem;
         border: 5px solid #183c60;
         border-radius: 50%;
@@ -205,13 +205,14 @@ body{
     }
 
     .home-p1 :nth-child(1){
-        font-size: 35px;
+        font-size: 25px;
         padding: 0;
         margin: 0;
         color: black;
     }
     .home-p1 :nth-child(3){
-        line-height: 18px;
+        margin-top: -7px;
+        line-height: 16px;
         font-size: 16px;
     }
 
