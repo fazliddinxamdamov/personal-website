@@ -1,18 +1,11 @@
 import React, {useEffect, useState} from "react";
 import './about2.css'
 import img from '../home/java.jpg'
-import me from './me.jpg'
+import me from './me2.jpg'
 import pdp from './pdp.JPG'
 import andijon from './andijon.jpg'
 import Slide from 'react-reveal/Slide'
 function AboutContainer() {
-
-    const [post, setPost] = useState(null)
-    useEffect(() => {
-        fetch("http://localhost:8080/about").then(response => response.ok).then(response => {
-            const {body} = response
-        })
-    }, [])
 
     return (
         <div className={"containerAbout"}>
@@ -20,6 +13,7 @@ function AboutContainer() {
                 <div className={"title"}>
                     <h1>Assalomu alaykum🖐️</h1>
                     <p>briefly about myself...</p>
+                    <br/>
                 </div>
             </Slide>
             <div className={"about-description"}>
@@ -55,7 +49,15 @@ function AboutContainer() {
                 </div>
                 <div className={"description"}>
                     <p>at <a target={"_blank"} href="https://pdp.uz/"><span className={"pdp-link"}>PDP IT Academy</span></a></p>
-                    <p>In this picture, I am doing my work at the PDP IT Academy in Tashkent. It was at this time that I was preparing my website, if I am not mistaken. And I also want to mention that I’ve learned what I’ve read here, and I haven’t stopped learning yet. I express my gratitude to the PDP.</p>
+                    <p>In this picture, I am doing my work at the PDP IT Academy in Tashkent.
+                        It was at this time that I was preparing my website, if I am not mistaken.
+                        And I also want to mention that I’ve learned what I’ve read here,
+                        and I haven’t stopped learning yet. I express my gratitude to the PDP.
+<br/>
+<br/>
+                        (November 2021 - April 2022)
+                    </p>
+                    <br/>
                 </div>
             </div>
 

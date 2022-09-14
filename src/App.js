@@ -4,7 +4,8 @@ import About from "./components/About/About";
 import Portfolio from "./components/portfolio/Portfolio";
 import Blog from "./components/blog/BLog";
 import NotFound from "./components/notFound/NotFound";
-import {BrowserRouter as Router, Routes, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import BlogItem from "./components/blog/BLogItem";
 
 function App() {
     return (
@@ -12,7 +13,8 @@ function App() {
             <Router>
                 <Routes>
                     <Route path='/' element={<Home/>}/>
-                    <Route path='/blog' element={<Blog/>}/>
+                    <Route exact path='/blog' element={<Blog/>}/>
+                    <Route path='/blog/:name' element={<BlogItem/>}/>
                     <Route path='/portfolio' element={<Portfolio/>}/>
                     <Route path='/about' element={<About/>}/>
                     <Route path='*' element={<NotFound/>}/>

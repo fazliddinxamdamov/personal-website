@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './Navbar.css'
 import navbarLogo from './logo_size.jpg'
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 function Navbar() {
 
@@ -12,7 +12,7 @@ function Navbar() {
     }
 
     return (
-        <div className={"container"}>
+        <div className={"container navbar"}>
 
             <div onClick={() => showSwitch()} className={show ? "bars-button active" : "bars-button"}>
                 <span></span>
@@ -31,10 +31,9 @@ function Navbar() {
                 <NavLink onClick={() => showSwitch()} to='/'>Home</NavLink>
                 <NavLink onClick={() => showSwitch()} to='/blog'>Blog🎊</NavLink>
                 <NavLink onClick={() => showSwitch()} to='/portfolio'>Services</NavLink>
-                <NavLink onClick={() => showSwitch()} to={{pathname: "//t.me/s/faz1iddinBLog"}} target="_blank">Channel</NavLink>
+                <NavLink onClick={() => showSwitch()} to={{pathname: "//t.me/faz1iddinBLog"}} target="_blank">Channel</NavLink>
                 <NavLink onClick={() => showSwitch()} to='/about'> About </NavLink>
             </div>
-
 
         </div>
     )
