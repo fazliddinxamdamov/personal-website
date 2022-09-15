@@ -27,8 +27,6 @@
 
 .blog-links {
     margin-right: 15rem;
-    /*margin: 0 auto;*/
-    /*border: 1px solid red;*/
     width: 800px;
     /*height: 100px;*/
     display: flex;
@@ -36,17 +34,39 @@
     flex-wrap: wrap;
 }
 
+.blog-links a{
+    text-decoration: none;
+}
+
 .blog {
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    border: 2px solid black;
-    background-color: #b4daf6;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    /*border-top: 2px solid !important;*/
+    border: 1px solid;
+}
+
+.blog div:nth-child(1){
+    /*border: 1px solid red;*/
+    width: 500px;
+}
+.blog div:nth-child(2){
+    padding: 1rem;
+    /*border: 1px solid red;*/
+    width: 70%;
+}
+
+.blog img{
+    object-fit: contain;
+    margin-right: 15rem;
+    /*border: 1px solid;*/
+    width: 100%;
+    height: 100%;
+    vertical-align: center;
+    aspect-ratio: auto;
 }
 
 .blog:hover{
-    box-shadow: 1px 1px 20px #a4a4a4;
-    transform: rotate(0.5deg);
+    box-shadow: 0 3px #a8a8a8;
 }
