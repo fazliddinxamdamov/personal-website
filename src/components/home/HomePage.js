@@ -14,31 +14,18 @@ import Slide from 'react-reveal/Slide';
 import ReactRain from 'react-rain-animation';
 import "react-rain-animation/lib/style.css";
 import LoadingIndicator from "../common/LoadingIndicator";
+import Fade from "react-reveal/Fade";
 
 function HomePage() {
 
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
 
-    const cacheImages = async (srcArray) => {
-        const promises = await srcArray.map((src) => {
-            return new Promise(function (resolve, reject) {
-                const img = new Image();
-                img.src = src;
-                img.onload = resolve();
-                img.onerror = reject();
-            })
-        })
-        await Promise.all(promises);
-        setIsLoading(false)
 
-    }
-
-    useEffect(() => {
-        const imgs = [
-            img, github, linkedIn, dev, medium, facebook, mail
-        ];
-        cacheImages(imgs);
-    }, [])
+    // useEffect(() => {
+    //     setTimeout(()=>{
+    //         setIsLoading(false);
+    //     }, 5000)
+    // }, [])
 
 
     return (
@@ -115,9 +102,12 @@ function HomePage() {
                         </div>
                     </Slide>
 
-                    <div className={"about-img"}>
-                        <img src={img} className={"home-abstract-img"} alt={"not found"}/>
-                    </div>
+                    <Fade>
+                        <div className={"about-img"}>
+                            <img src={img} className={"home-abstract-img"} alt={"not found"}/>
+                        </div>
+                    </Fade>
+
                 </div>
             }
         </div>

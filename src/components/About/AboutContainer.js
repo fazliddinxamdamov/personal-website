@@ -5,6 +5,7 @@ import me from './me2.jpg'
 import pdp from './pdp.JPG'
 import andijon from './andijon.jpg'
 import Slide from 'react-reveal/Slide'
+import Fade from 'react-reveal/Fade'
 function AboutContainer() {
 
     return (
@@ -17,11 +18,11 @@ function AboutContainer() {
                 </div>
             </Slide>
             <div className={"about-description"}>
-                <Slide top>
+                <Fade>
                     <div className={"div-img2"}>
                         <img src={me} className={"img"} alt={"not found"}/>
                     </div>
-                </Slide>
+                </Fade>
 
                 <div className={"description"}>
                     <p>My fullname is Fazliddin Xamdamov</p>
@@ -33,7 +34,9 @@ function AboutContainer() {
             <div className={"about-description"}>
                 <p></p>
                 <div className={"div-img"}>
-                    <img src={andijon} className={"img"} alt={"not found"}/>
+                    <Fade>
+                        <img src={andijon} className={"img"} alt={"not found"}/>
+                    </Fade>
                 </div>
                 <div className={"description"}>
                     <p>Andijon(Anjan)</p>
@@ -45,7 +48,9 @@ function AboutContainer() {
             <div className={"about-description"}>
                 <p></p>
                 <div className={"div-img"}>
-                    <img src={pdp} className={"img"} alt={"not found"}/>
+                    <Fade>
+                        <img src={pdp} className={"img"} alt={"not found"}/>
+                    </Fade>
                 </div>
                 <div className={"description"}>
                     <p>at <a target={"_blank"} href="https://pdp.uz/"><span className={"pdp-link"}>PDP IT Academy</span></a></p>
