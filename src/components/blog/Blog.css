@@ -36,6 +36,15 @@
 
 .blog-links a{
     text-decoration: none;
+    text-decoration-thickness: unset;
+    text-decoration-style: unset;
+    text-decoration-color: white;
+}
+
+.blog-links a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .blog {
@@ -69,4 +78,10 @@
 
 .blog:hover{
     box-shadow: 0 3px #a8a8a8;
+}
+
+.blog-description{
+    inline-size: 100%;
+    overflow: hidden;
+    height: 100px;
 }
