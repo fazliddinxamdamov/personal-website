@@ -51,10 +51,11 @@ function BlogItem() {
                     <img src={blog.image_url} alt=""/>
 
                     {/*{blog.title}*/}
-                </div>
-            }
 
-            <Footer/>
+                    <Footer/>
+                </div>
+
+            }
 
         </div>
 

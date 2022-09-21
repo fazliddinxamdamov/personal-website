@@ -39,33 +39,33 @@ function Blog() {
                         <div className={'part1'}>
                             <Fade>
                                 <div className={"blog-links"}>
-
-                                    {blogs.map((blog) => {
+                                    {blogs.length>0 ? blogs.map((blog) => {
                                         return (
                                             <Link to={"/blog/" + blog.order}>
-                                                <div className={'blog'}>
-                                                    <div><img src={blog.image_url} alt="Photo not found"/></div>
-                                                    <div>
-                                                        <p>{moment(blog.createdAt.seconds * 1000).format("MMM D")}</p>
-                                                        <br/>
-                                                        <h2>{blog.title}</h2>
-                                                        <br/>
-                                                        {/*<p>{blog.description}</p>*/}
-                                                        <p className={"blog-description"}>Lorem ipsum dolor sit amet,
-                                                            consectetur adipisicing elit. Dolore expedita, facere illum ipsum
-                                                            laudantium nihil officia pariatur praesentium temporibus voluptatem!
-                                                            Deserunt dolore facilis iure modi quidem totam. Iste, non,
-                                                            similique.lorem Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                            elit. Aperiam aspernatur cupiditate, hic inventore officiis omnis
-                                                            quam quia. Aliquam autem, eveniet explicabo fugiat fugit ipsum neque
-                                                            obcaecati perspiciatis, repellat sed, velit? </p>
+                                                    <div className={'blog'}>
+                                                        <div><img src={blog.image_url} alt="Photo not found"/></div>
+                                                        <div>
+                                                            <p className={"blog-date"}>{moment(blog.createdAt.seconds * 1000).format("MMM D")}</p>
+                                                            <br/>
+                                                            <h2 className={'blog-title'}>{blog.title}</h2>
+                                                            <br/>
+                                                            {/*<p>{blog.description}</p>*/}
+                                                            <p className={"blog-description"}>Lorem ipsum dolor sit amet,
+                                                                consectetur adipisicing elit. Dolore expedita, facere illum ipsum
+                                                                laudantium nihil officia pariatur praesentium temporibus voluptatem!
+                                                                Deserunt dolore facilis iure modi quidem totam. Iste, non,
+                                                                similique.lorem Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                                elit. Aperiam aspernatur cupiditate, hic inventore officiis omnis
+                                                                quam quia. Aliquam autem, eveniet explicabo fugiat fugit ipsum neque
+                                                                obcaecati perspiciatis, repellat sed, velit? </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <br/>
-                                            </Link>
-
+                                                    <br/>
+                                                </Link>
                                         )
-                                    })}
+                                    }) : <div>
+                                        <h1>Blogs not found</h1>
+                                    </div>}
                                 </div>
                             </Fade>
 

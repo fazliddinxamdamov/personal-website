@@ -1,4 +1,3 @@
-
 .blog-container {
     /*background-color: #3C9BDF;*/
     box-sizing: border-box;
@@ -84,4 +83,53 @@
     inline-size: 100%;
     overflow: hidden;
     height: 100px;
+}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+    .part1{
+        margin: 0 auto;
+        /*width: 100%;*/
+        display: inline-block;
+        /*justify-content: space-evenly;*/
+        /*padding: 2rem;*/
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .my-channel{
+        display: none;
+    }
+
+    .blog-links {
+        margin: 0 auto;
+        width: 300px;
+        display: inline-block;
+        flex-wrap: wrap;
+    }
+    .blog {
+        display: inline-block;
+        width: 300px;
+        margin-bottom: 1rem;
+    }
+
+    .blog div:nth-child(1){
+        margin: 0 auto;
+        box-sizing: border-box;
+        /*border: 1px solid red;*/
+        width: 150px;
+    }
+    .blog div:nth-child(2){
+        box-sizing: border-box;
+        /*padding: 1rem;*/
+        width: 100%;
+    }
+
+    .blog-title{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .blog-date{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
 }

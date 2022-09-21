@@ -159,11 +159,15 @@
 
     .bars-button.active span:nth-child(1) {
         position: absolute;
+        top: 15px;
+        left: 12px;
         margin-top: 5px;
         transform: rotate(-45deg);
     }
 
     .bars-button.active span:nth-child(3) {
+        top: 15px;
+        left: 12px;
         position: absolute;
         margin-top: 5px;
         transform: rotate(45deg);
