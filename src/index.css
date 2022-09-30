@@ -9,5 +9,21 @@ body {
     margin: 0;
     background-color: #ffffff !important;
     box-sizing: border-box;
-    font-family: "InconsolataMedium";
+    font-family: "InconsolataMedium", serif;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #57bafd;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #4496ce;
 }
