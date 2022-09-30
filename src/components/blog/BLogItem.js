@@ -1,6 +1,6 @@
-import './Blog.css'
+import './BlogItem.css'
 import {useParams} from "react-router-dom";
-import {collection, getDocs, query, where} from "firebase/firestore";
+import {collection, getDocs, query, where, orderBy, limit} from "firebase/firestore";
 import {db} from "../../firebase-config";
 import {useEffect, useState} from "react";
 import LoadingIndicator from "../common/LoadingIndicator";
@@ -20,7 +20,7 @@ class Blog {
 
 function BlogItem() {
 
-    const {id} = useParams();
+    const {name} = useParams();
     const [blog , setBlog] = useState(null);
     const [loading, setLoading] = useState(true);
     const blogControllerRef = collection(db, 'blog')
@@ -28,18 +28,20 @@ function BlogItem() {
     useEffect(() => {
         const getBlogById = async () => {
 
-            const q = query(blogControllerRef, where("order", "==", 1));
-            const querySnapshot = await getDocs(q);
-            querySnapshot.forEach((doc) => {
-                // doc.data() is never undefined for query doc snapshots
-                console.log(doc.id, " => ", doc.data());
-                setBlog(doc.data())
-                setLoading(false);
-            });
+            // const q = query(blogControllerRef, where("order", "==", id.toNumber() , orderBy("title", "asc"), limit(1)));
+            // const querySnapshot = await getDocs(q);
+            // setBlog(querySnapshot);
+            setLoading(false);
+            // querySnapshot.forEach((doc) => {
+            //     // doc.data() is never undefined for query doc snapshots
+            //     // console.log(doc.id, " => ", doc.data());
+            //     setBlog(doc.data())
+            //     setLoading(false);
+            // });
 
         }
         getBlogById();
-    }, [id])
+    }, [name])
 
     return(
         <div>
@@ -48,9 +50,12 @@ function BlogItem() {
             {loading ? <LoadingIndicator/>
             :
                 <div>
-                    <img src={blog.image_url} alt=""/>
+                    <div className={"blog-item"}>
+                        <div className={"blog-item-image"}>
+                            <img src={blog.image_url} alt="Image not found :("/>
+                        </div>
 
-                    {/*{blog.title}*/}
+                    </div>
 
                     <Footer/>
                 </div>

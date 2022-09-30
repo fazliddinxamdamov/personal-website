@@ -7,7 +7,7 @@ import Swing from 'react-reveal/Swing';
 import moment from "moment";
 import {useEffect, useState} from "react";
 import {db} from "../../firebase-config";
-import {collection, getDocs} from 'firebase/firestore'
+import {collection, getDocs, orderBy, query} from 'firebase/firestore'
 import LoadingIndicator from "../common/LoadingIndicator";
 
 function Blog() {
@@ -18,7 +18,8 @@ function Blog() {
 
     useEffect(() => {
         const getBlogs = async () => {
-            const data = await getDocs(blogsControllerRef);
+            const query2 = query(blogsControllerRef, orderBy("order", "desc"))
+            const data = await getDocs(query2);
             setBlogs(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
             setLoading(false)
             // console.log(data.docs[0]._document.data.value.mapValue.fields)
@@ -41,7 +42,7 @@ function Blog() {
                                 <div className={"blog-links"}>
                                     {blogs.length>0 ? blogs.map((blog) => {
                                         return (
-                                            <Link to={"/blog/" + blog.order}>
+                                            <Link to={"/blog/" + blog.title}>
                                                     <div className={'blog'}>
                                                         <div><img src={blog.image_url} alt="Photo not found"/></div>
                                                         <div>

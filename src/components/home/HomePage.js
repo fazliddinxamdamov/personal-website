@@ -69,11 +69,11 @@ function HomePage() {
                                     src={medium} alt="."/> </a>
                             </div>
 
-                            <div className={"github-icon"}>
-                                <a target={"_blank"} href={"https://dev.to/fazliddinxamdamov"} rel="noreferrer">
-                                    <img
-                                        src={dev} alt="."/> </a>
-                            </div>
+                            {/*<div className={"github-icon"}>*/}
+                            {/*    <a target={"_blank"} href={"https://dev.to/fazliddinxamdamov"} rel="noreferrer">*/}
+                            {/*        <img*/}
+                            {/*            src={dev} alt="."/> </a>*/}
+                            {/*</div>*/}
 
                             <div className={"github-icon"}>
                                 <a target={"_blank"} href={"https://www.linkedin.com/in/fazliddin-xamdamov"}

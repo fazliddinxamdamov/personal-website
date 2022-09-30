@@ -14,7 +14,7 @@ function App() {
                 <Routes>
                     <Route path='/' element={<Home/>}/>
                     <Route exact path='/blog' element={<Blog/>}/>
-                    <Route path='/blog/:id' element={<BlogItem/>}/>
+                    <Route path='/blog/:name' element={<BlogItem/>}/>
                     <Route path='/portfolio' element={<Portfolio/>}/>
                     <Route path='/about' element={<About/>}/>
                     <Route path='*' element={<NotFound/>}/>
