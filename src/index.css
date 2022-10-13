@@ -21,9 +21,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #57bafd;
+    background: #0d4367;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: #4496ce;
+    background: #0a263a;
 }

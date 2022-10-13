@@ -4,8 +4,7 @@ function Footer() {
     return(
         <footer>
             <div className={"footer-container"}>
-                <p>© 2022 fazliddin.com</p>
-                <span></span>
+                <p className={'footer-years'}>2021-2022</p>
             </div>
         </footer>
 

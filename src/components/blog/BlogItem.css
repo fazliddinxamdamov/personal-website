@@ -25,4 +25,7 @@
     height: 100%;
 }
 
-/*.blog-item-*/
+.blog-item-description{
+    line-height: 22px;
+}
+

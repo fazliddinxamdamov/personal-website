@@ -48,7 +48,12 @@ function BlogItem(blogs) {
                     <div className={"blog-item"}>
 
 
-                        <div><h1>{blog.title}</h1></div>
+                        <div>
+                            <div>
+                                <h1>{blog.title}</h1>
+                            </div>
+                            
+                        </div>
 
                         <div className={"blog-item-img"}><img src={blog.image_url} alt="Image not found :("/></div>
 
@@ -56,7 +61,7 @@ function BlogItem(blogs) {
 
                         <div><p>{blog.small_description}</p></div>
                         <br/>
-                        <div><p>{blog.description}</p></div>
+                        <div className={'blog-item-description'}><p>{blog.description}</p></div>
                         <br/>
                         <p>{blog.type}</p>
 

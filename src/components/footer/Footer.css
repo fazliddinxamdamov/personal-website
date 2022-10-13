@@ -1,11 +1,20 @@
 .footer-container{
     width: 100%;
-    height: 50px;
+    height: 20px;
     display: flex;
     justify-content: center;
 }
-.footer-container p{
+/*.footer-container p{*/
+/*    align-items: center;*/
+/*    display: flex;*/
+/*    justify-conent: center;*/
+/*}*/
+
+.footer-years{
+    height: 20px;
     align-items: center;
     display: flex;
     justify-conent: center;
+    opacity: 0.5;
+    margin-bottom: 0;
 }
