@@ -32,13 +32,13 @@ function HomePage() {
                         </div>
                         <div className={"home-about-buttons"}>
                             <div className={"home-button-item1"}>
-                                <Link to='/about' style={{color: 'inherit', textDecoration: 'none'}}>
-                                    <button type={"button"} className={"about-me-button1"}>About me</button>
+                                <Link to='/blog' style={{color: 'inherit', textDecoration: 'none'}}>
+                                    <button type={"button"} className={"about-me-button1"}>Read blogs</button>
                                 </Link>
                             </div>
                             <div className={"home-button-item2"}>
-                                <Link to='/portfolio' style={{color: 'inherit', textDecoration: 'none'}}>
-                                    <button type={"button"} className={"about-me-button2"}>Services</button>
+                                <Link to='/about' style={{color: 'inherit', textDecoration: 'none'}}>
+                                    <button type={"button"} className={"about-me-button2"}>About me</button>
                                 </Link>
                             </div>
                         </div>

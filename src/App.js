@@ -19,13 +19,15 @@ function App() {
 
 
     useEffect(() => {
+
         const getBlogs = async () => {
-            // console.log("start getBLogs()")
-            const query2 = query(blogsControllerRef, orderBy("order", "desc"))
-            const data = await getDocs(query2);
-            setBlogs(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
-            // console.log(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
-            setLoading(false)
+            if (blogs.length === 0){
+                const query2 = query(blogsControllerRef, orderBy("order", "desc"))
+                const data = await getDocs(query2);
+                setBlogs(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
+                // console.log(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
+                setLoading(false)
+            }
         }
         getBlogs();
 

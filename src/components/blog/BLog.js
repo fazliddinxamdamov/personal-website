@@ -12,37 +12,40 @@ function Blog(blogs) {
         return String(title.toString().replaceAll(" ", "-"))
     }
 
-    return (
-        <>
+    return (<>
             <Navbar/>
             <div className={"blog-container"}>
-                <div><h1>My Blogs</h1></div>
+                <div><h1 className={'my-blog-h1'}>My Blogs</h1></div>
                 <div className={'part1'}>
                     <Fade>
                         <div className={"blog-links"}>
                             {blogs.blogs.length > 0 ? blogs.blogs.map((blog) => {
-                                return (
-                                    <Link to={"/blog/" + replace(blog.title)}>
+                                return (<Link to={"/blog/" + replace(blog.title)}>
                                         <div className={'blog'}>
                                             <div><img src={blog.image_url} alt="Photo not found"/></div>
                                             <div>
                                                 <p className={"blog-date"}>
-                                                    {
-                                                        moment(blog.createdAt.seconds * 1000)
-                                                            .format("MMM D")
-                                                    }
+                                                    {moment(blog.createdAt.seconds * 1000)
+                                                        .format("MMM D")}
                                                 </p>
                                                 <br/>
-                                                <h2 className={'blog-title'}>
-                                                    {blog.title}
-                                                </h2>
+                                                <h2 className={'blog-title'}>{blog.title}</h2>
                                                 <br/>
-                                                <p className={"blog-description"}>{blog.description}</p>
+                                                <p className={'blog-description'}>{blog.small_description}</p>
+
+                                                <button className="learn-more">
+                                                    <span className="circle" aria-hidden="true">
+                                                        <span className="icon arrow"></span>
+                                                    </span>
+                                                    <span className="button-text">Learn More</span>
+                                                </button>
+
+                                                <p className={"blog-type"}>{blog.type}</p>
+
                                             </div>
                                         </div>
                                         <br/>
-                                    </Link>
-                                )
+                                    </Link>)
                             }) : <div>
                                 <h1>Blogs not found</h1>
                             </div>}
@@ -60,8 +63,7 @@ function Blog(blogs) {
                 </div>
             </div>
             <Footer/>
-        </>
-    )
+        </>)
 }
 
 export default Blog

@@ -1,5 +1,28 @@
-/*.blog-item{*/
-/*    margin: 0 auto;*/
-/*    margin-top: 1rem;*/
-/*    width: 800px;*/
-/*}*/
+.blog-item-wrapper {
+    width: 100%;
+}
+
+.blog-item {
+    /*border: 1px solid white;*/
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 900px;
+    /*background-color: #cfe3f1;*/
+}
+
+.blog-item-img{
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    vertical-align: center;
+    aspect-ratio: auto;
+}
+
+.blog-item-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/*.blog-item-*/

@@ -44,19 +44,21 @@ function BlogItem(blogs) {
             <Navbar/>
             {loading ? <LoadingIndicator/>
                 :
-                <div>
+                <div className={'blog-item-wrapper'}>
                     <div className={"blog-item"}>
-                        <div className={"blog-item-image"}>
-                            <img src={blog.image_url} alt="Image not found :("/>
-                        </div>
 
-                        <div>
-                            <p>{blog.title}</p>
-                        </div>
 
-                        <div>
-                            <p>{blog.description}</p>
-                        </div>
+                        <div><h1>{blog.title}</h1></div>
+
+                        <div className={"blog-item-img"}><img src={blog.image_url} alt="Image not found :("/></div>
+
+                        <br/>
+
+                        <div><p>{blog.small_description}</p></div>
+                        <br/>
+                        <div><p>{blog.description}</p></div>
+                        <br/>
+                        <p>{blog.type}</p>
 
                     </div>
 

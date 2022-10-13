@@ -1,3 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+/** {*/
+/*    box-sizing: border-box;*/
+/*}*/
+/**::before, *::after {*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+button.learn-more {
+    width: 10rem;
+    height: auto;
+}
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 2rem;
+    height: 2rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.125rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.35rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+button:hover .button-text {
+    color: #fff;
+}
+
 .blog-container {
     /*background-color: #3C9BDF;*/
     box-sizing: border-box;
@@ -13,6 +101,10 @@
     position: relative;
 }
 
+.my-blog-h1{
+    margin-bottom: 0;
+}
+
 .my-channel{
     padding: 10px;
     position: fixed;
@@ -25,7 +117,7 @@
 }
 
 .blog-links {
-    margin-right: 15rem;
+    /*margin-right: 15rem;*/
     width: 800px;
     /*height: 100px;*/
     display: flex;
@@ -49,25 +141,29 @@
 .blog {
     display: flex;
     justify-content: space-between;
-    width: 800px;
-    margin-bottom: 1rem;
-    /*border-top: 2px solid !important;*/
-    border: 1px solid;
+    width: 600px;
+    height: 200px;
+    /*border: 1px solid;*/
+    border-radius: 5px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: -1px -1px 4px rgba(217, 217, 217,0.3), 1px 1px 4px rgba(148,201,255,0.30);
+    margin-bottom: 5px;
+    position: relative;
 }
 
 .blog div:nth-child(1){
     /*border: 1px solid red;*/
-    width: 500px;
+    width: 370px;
 }
 .blog div:nth-child(2){
     padding: 1rem;
-    /*border: 1px solid red;*/
     width: 70%;
 }
 
 .blog img{
     object-fit: contain;
-    margin-right: 15rem;
+    /*margin-right: 15rem;*/
     /*border: 1px solid;*/
     width: 100%;
     height: 100%;
@@ -76,14 +172,27 @@
 }
 
 .blog:hover{
-    box-shadow: 0 3px #a8a8a8;
+    box-shadow: -1px -1px 8px rgba(217, 217, 217,0.45), 1px 1px 8px rgba(148,201,255,0.3);
+}
+
+.blog-title{
+    margin: 0;
 }
 
 .blog-description{
     inline-size: 100%;
     overflow: hidden;
-    height: 100px;
+    height: 35px;
 }
+
+.blog-type{
+    position: absolute;
+    bottom: 10px;
+    right: 14px;
+    font-size: 12px;
+}
+
+
 
 @media screen and (min-width: 0) and (max-width: 768px) {
     .part1{
