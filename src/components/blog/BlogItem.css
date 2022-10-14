@@ -29,3 +29,32 @@
     line-height: 22px;
 }
 
+.blog-item-type{
+    margin-top: 10px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+    .blog-item {
+        /*border: 1px solid white;*/
+        border-radius: 5px;
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 350px;
+        /*background-color: #cfe3f1;*/
+    }
+
+    .blog-item-img{
+        margin: 0 auto;
+        width: 200px;
+        border-radius: 5px;
+        overflow: hidden;
+        vertical-align: center;
+        aspect-ratio: auto;
+    }
+
+    .blog-item-description{
+        line-height: 20px;
+    }
+}
+

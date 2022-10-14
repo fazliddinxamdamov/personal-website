@@ -62,8 +62,8 @@ function BlogItem(blogs) {
                         <div><p>{blog.small_description}</p></div>
                         <br/>
                         <div className={'blog-item-description'}><p>{blog.description}</p></div>
-                        <br/>
-                        <p>{blog.type}</p>
+
+                        <p className={'blog-item-type'}>{blog.type}</p>
 
                     </div>
 
