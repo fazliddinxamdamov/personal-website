@@ -7,7 +7,7 @@
     border-radius: 5px;
     margin: 0 auto;
     margin-top: 2rem;
-    width: 900px;
+    width: 700px;
     /*background-color: #cfe3f1;*/
 }
 
@@ -26,7 +26,8 @@
 }
 
 .blog-item-description{
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 .blog-item-type{

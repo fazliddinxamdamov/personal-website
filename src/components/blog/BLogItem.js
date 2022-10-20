@@ -19,6 +19,7 @@ function BlogItem(blogs) {
     }
 
     useEffect(() => {
+        document.title = title;
         const getBlog = () => {
             console.log("enter getBlog()")
             blogs.blogs.map(value => {
