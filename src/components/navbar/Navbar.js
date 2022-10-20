@@ -32,7 +32,7 @@ function Navbar() {
                     {/*<NavLink onClick={() => showSwitch()} to='/'>Home</NavLink>*/}
                     <NavLink onClick={() => showSwitch()} to='/blog'>Blog🎊</NavLink>
                     <NavLink onClick={() => showSwitch()} to='/portfolio'>Services</NavLink>
-                    <NavLink onClick={() => showSwitch()} to={{pathname: "//t.me/faz1iddinBLog"}} target="_blank">Channel</NavLink>
+                    <NavLink onClick={() => showSwitch()} to={{pathname: "//t.me/s/faz1iddinBLog"}} target="_blank">Channel</NavLink>
                     <NavLink onClick={() => showSwitch()} to='/about'> About </NavLink>
                 </div>
 
