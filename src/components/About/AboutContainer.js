@@ -59,10 +59,25 @@ function AboutContainer() {
                         It was at this time that I was preparing my website, if I am not mistaken.
                         And I also want to mention that I’ve learned what I’ve read here,
                         and I haven’t stopped learning yet. I express my gratitude to the PDP.
-<br/>
-<br/>
-                        (November 2021 - April 2022)
                     </p>
+                    <p>(November 2021 - April 2022)</p>
+                    <br/>
+                </div>
+            </div>
+
+            <div className={"about-description"}>
+                <p></p>
+                <div className={"div-img"}>
+                    <Fade>
+                        <img src={"https://pbs.twimg.com/profile_images/1386577606447964165/Bf5NqeUU_400x400.jpg"} className={"img"} alt={"not found"}/>
+                    </Fade>
+                </div>
+                <div className={"description"}>
+                    <p>at <a target={"_blank"} href="https://www.xb.uz/"><span className={"pdp-link"}>XALQ BANK</span></a></p>
+                    <p>
+                        Currently, I am working as a programmer at Xalq Bank. Despite the fact that I have not been working long, I think that I will get along well with everyone))
+                    </p>
+                    <p>(October 2022)</p>
                     <br/>
                 </div>
             </div>
