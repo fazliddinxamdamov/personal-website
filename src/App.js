@@ -21,7 +21,7 @@ function App() {
     useEffect(() => {
 
         const getBlogs = async () => {
-            if (blogs.length === 0){
+            if (blogs.length === 0) {
                 const query2 = query(blogsControllerRef, orderBy("order", "desc"))
                 const data = await getDocs(query2);
                 setBlogs(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
@@ -43,8 +43,8 @@ function App() {
                         <Router>
                             <Routes>
                                 <Route path='/' element={<Home/>}/>
-                                <Route exact path='/blog' element={<Blog blogs={blogs} />}/>}/>
-                                <Route path='/blog/:title' element={<BlogItem blogs={blogs} />}/>
+                                <Route exact path='/blog' element={<Blog blogs={blogs}/>}/>
+                                <Route path='/blog/:title' element={<BlogItem blogs={blogs}/>}/>
                                 <Route path='/portfolio' element={<Portfolio/>}/>
                                 <Route path='/about' element={<About/>}/>
                                 <Route path='*' element={<NotFound/>}/>

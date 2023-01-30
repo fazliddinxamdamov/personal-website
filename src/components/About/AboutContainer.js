@@ -4,6 +4,7 @@ import img from '../home/java.jpg'
 import me from './me2.jpg'
 import pdp from './pdp.JPG'
 import andijon from './andijon.jpg'
+import xazna from './xazna.jpg'
 import Slide from 'react-reveal/Slide'
 import Fade from 'react-reveal/Fade'
 
@@ -69,13 +70,13 @@ function AboutContainer() {
                 <p></p>
                 <div className={"div-img"}>
                     <Fade>
-                        <img src={"https://pbs.twimg.com/profile_images/1386577606447964165/Bf5NqeUU_400x400.jpg"} className={"img"} alt={"not found"}/>
+                        <img src={xazna} className={"img"} alt={"not found"}/>
                     </Fade>
                 </div>
                 <div className={"description"}>
                     <p>at <a target={"_blank"} href="https://www.xb.uz/"><span className={"pdp-link"}>XALQ BANK</span></a></p>
                     <p>
-                        Currently, I am working as a programmer at Xalq Bank. Despite the fact that I have not been working long, I think that I will get along well with everyone))
+                        Currently, I am working as a programmer at XAZNA(Xalq Bank). Despite the fact that I have not been working long, I think that I will get along well with everyone))
                     </p>
                     <p>(October 2022)</p>
                     <br/>
