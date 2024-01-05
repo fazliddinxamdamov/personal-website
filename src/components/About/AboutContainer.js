@@ -5,26 +5,26 @@ import me from './me2.jpg'
 import pdp from './pdp.JPG'
 import andijon from './andijon.jpg'
 import xazna from './xazna.jpg'
-import Slide from 'react-reveal/Slide'
-import Fade from 'react-reveal/Fade'
-
+// import Slide from 'react-reveal/Slide'
+// import Fade from 'react-reveal/Fade'
+//
 function AboutContainer() {
 
     return (
         <div className={"containerAbout"}>
-            <Slide left>
+            {/*<Slide left>*/}
                 <div className={"title"}>
                     <h1>Assalomu alaykum🖐️</h1>
                     <p>briefly about myself...</p>
                     <br/>
                 </div>
-            </Slide>
+            {/*</Slide>*/}
             <div className={"about-description"}>
-                <Fade>
+                {/*<Fade>*/}
                     <div className={"div-img2"}>
                         <img src={me} className={"img"} alt={"not found"}/>
                     </div>
-                </Fade>
+                {/*</Fade>*/}
 
                 <div className={"description"}>
                     <p>My fullname is Fazliddin Xamdamov</p>
@@ -36,9 +36,9 @@ function AboutContainer() {
             <div className={"about-description"}>
                 <p></p>
                 <div className={"div-img"}>
-                    <Fade>
+                    {/*<Fade>*/}
                         <img src={andijon} className={"img"} alt={"not found"}/>
-                    </Fade>
+                    {/*</Fade>*/}
                 </div>
                 <div className={"description"}>
                     <p>Andijon(Anjan)</p>
@@ -50,9 +50,9 @@ function AboutContainer() {
             <div className={"about-description"}>
                 <p></p>
                 <div className={"div-img"}>
-                    <Fade>
+                    {/*<Fade>*/}
                         <img src={pdp} className={"img"} alt={"not found"}/>
-                    </Fade>
+                    {/*</Fade>*/}
                 </div>
                 <div className={"description"}>
                     <p>at <a target={"_blank"} href="https://pdp.uz/"><span className={"pdp-link"}>PDP IT Academy</span></a></p>
@@ -69,9 +69,9 @@ function AboutContainer() {
             <div className={"about-description"}>
                 <p></p>
                 <div className={"div-img"}>
-                    <Fade>
+                    {/*<Fade>*/}
                         <img src={xazna} className={"img"} alt={"not found"}/>
-                    </Fade>
+                    {/*</Fade>*/}
                 </div>
                 <div className={"description"}>
                     <p>at <a target={"_blank"} href="https://www.xb.uz/"><span className={"pdp-link"}>XALQ BANK</span></a></p>

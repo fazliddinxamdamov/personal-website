@@ -1,6 +1,6 @@
 import React from "react";
 import './Portfolio.css'
-import Slide from 'react-reveal/Slide';
+// import Slide from 'react-reveal/Slide';
 import img_1 from './programming-course.png'
 import img_2 from './database (3).png'
 import img_3 from './search-engine-optimization.png'
@@ -11,12 +11,12 @@ function Service() {
         <div className={"service-container"}>
 
             <div className={"service-entry"}>
-                <Slide top>
+                {/*<Slide top>*/}
                     <div className={"service-my-service"}>
                         <h1>My services</h1>
                         <p>I’m always trying to make the assignments completely perfect</p>
                     </div>
-                </Slide>
+                {/*</Slide>*/}
             </div>
 
 

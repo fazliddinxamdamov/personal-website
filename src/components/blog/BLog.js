@@ -17,7 +17,7 @@ function Blog(blogs) {
             <div className={"blog-container"}>
                 <div><h1 className={'my-blog-h1'}>My Blogs</h1></div>
                 <div className={'part1'}>
-                    <Fade>
+                    {/*<Fade>*/}
                         <div className={"blog-links"}>
                             {blogs.blogs.length > 0 ? blogs.blogs.map((blog) => {
                                 return (<Link to={"/blog/" + replace(blog.title)}>
@@ -50,15 +50,15 @@ function Blog(blogs) {
                                 <h1>Blogs not found</h1>
                             </div>}
                         </div>
-                    </Fade>
+                    {/*</Fade>*/}
 
-                    <Swing>
+                    {/*<Swing>*/}
                         <div className={"my-channel"}>
                             <h3>NEWSLETTER</h3>
                             <p>Subscribe to my channel in telegram <Link
                                 to={{pathname: "//t.me/faz1iddinBLog"}}>@faz1iddinBlog</Link></p>
                         </div>
-                    </Swing>
+                    {/*</Swing>*/}
 
                 </div>
             </div>

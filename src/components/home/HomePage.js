@@ -9,9 +9,9 @@ import medium from './7088990_medium_medium logo_icon.png'
 import facebook from './facebook.png'
 import mail from './mail4.png'
 import {Link} from "react-router-dom";
-import Slide from 'react-reveal/Slide';
+// import Slide from 'react-reveal/Slide';
 import "react-rain-animation/lib/style.css";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 
 function HomePage() {
 
@@ -19,7 +19,7 @@ function HomePage() {
         <main>
             <div className={"home-about-info"}>
                 {/*<ReactRain numDrops = "600"/>*/}
-                <Slide left>
+                {/*<Slide left>*/}
                     <div className={"home-about-description"}>
                         <div className={"home-my-img-div"}>
                             <img src={img} className={"home-my-img"} alt={"My image not found"}/>
@@ -81,13 +81,13 @@ function HomePage() {
                             </div>
                         </div>
                     </div>
-                </Slide>
+                {/*</Slide>*/}
 
-                <Fade>
+                {/*<Fade>*/}
                     <div className={"about-img"}>
                         <img src={img} className={"home-abstract-img"} alt={"not found"}/>
                     </div>
-                </Fade>
+                {/*</Fade>*/}
 
             </div>
         </main>
