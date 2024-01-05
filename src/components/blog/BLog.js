@@ -2,8 +2,8 @@ import './Blog.css'
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
 import {Link} from "react-router-dom";
-import Fade from 'react-reveal/Fade';
-import Swing from 'react-reveal/Swing';
+// import Fade from 'react-reveal/Fade';
+// import Swing from 'react-reveal/Swing';
 import moment from "moment";
 
 function Blog(blogs) {
