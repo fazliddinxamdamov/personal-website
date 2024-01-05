@@ -2,8 +2,6 @@ import './Blog.css'
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
 import {Link} from "react-router-dom";
-// import Fade from 'react-reveal/Fade';
-// import Swing from 'react-reveal/Swing';
 import moment from "moment";
 
 function Blog(blogs) {
@@ -17,7 +15,6 @@ function Blog(blogs) {
             <div className={"blog-container"}>
                 <div><h1 className={'my-blog-h1'}>My Blogs</h1></div>
                 <div className={'part1'}>
-                    {/*<Fade>*/}
                         <div className={"blog-links"}>
                             {blogs.blogs.length > 0 ? blogs.blogs.map((blog) => {
                                 return (<Link to={"/blog/" + replace(blog.title)}>
@@ -50,15 +47,11 @@ function Blog(blogs) {
                                 <h1>Blogs not found</h1>
                             </div>}
                         </div>
-                    {/*</Fade>*/}
-
-                    {/*<Swing>*/}
                         <div className={"my-channel"}>
                             <h3>NEWSLETTER</h3>
                             <p>Subscribe to my channel in telegram <Link
                                 to={{pathname: "//t.me/faz1iddinBLog"}}>@faz1iddinBlog</Link></p>
                         </div>
-                    {/*</Swing>*/}
 
                 </div>
             </div>

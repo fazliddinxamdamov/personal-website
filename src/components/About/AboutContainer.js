@@ -5,9 +5,7 @@ import me from './me2.jpg'
 import pdp from './pdp.JPG'
 import andijon from './andijon.jpg'
 import xazna from './xazna.jpg'
-// import Slide from 'react-reveal/Slide'
-// import Fade from 'react-reveal/Fade'
-//
+
 function AboutContainer() {
 
     return (
