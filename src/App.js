@@ -29,7 +29,7 @@ function App() {
                 setLoading(false)
             }
         }
-        getBlogs();
+        getBlogs().then(r => console.log(r));
 
     }, [])
 

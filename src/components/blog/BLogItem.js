@@ -1,8 +1,8 @@
 import './BlogItem.css'
 import {useParams} from "react-router-dom";
-import {collection, getDocs, orderBy, query} from 'firebase/firestore'
+// import {collection, getDocs, orderBy, query} from 'firebase/firestore'
 
-import {db} from "../../firebase-config";
+// import {db} from "../../firebase-config";
 import {useEffect, useState} from "react";
 import LoadingIndicator from "../common/LoadingIndicator";
 import Navbar from "../navbar/Navbar";
